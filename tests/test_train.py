@@ -21,7 +21,7 @@ def test_model_training():
 
 def test_model_prediction():
     """Test if the trained model makes predictions correctly."""
-    test_data = np.array([[1, 0, 50000, 30, 0, 1, 20000, 2]])  # Adjust according to dataset
+    test_data = np.array([[30,0,30,0,1]])  # Adjust according to dataset
     prediction = model.predict(test_data)
     assert prediction is not None, "❌ Model failed to make a prediction"
     assert isinstance(prediction, (list, tuple, np.ndarray)), "❌ Prediction format incorrect"
